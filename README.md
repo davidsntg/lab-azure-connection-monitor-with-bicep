@@ -4,7 +4,7 @@ This repo is a lab to **play with Connection Monitor**, part of Network Watcher.
 
 It contains basically Azure Bicep code to provision following infrastructure:
 
-![Big Picture](docs/architecture.png)
+![Architecture](docs/architecture.png)
 
 In addition to this hub & spoke, on-premise & S2S VPN, Bicep code will create Azure Network Watcher in the target subscription and configure a Connection Monitor that will:
 
@@ -15,12 +15,21 @@ In addition to this hub & spoke, on-premise & S2S VPN, Bicep code will create Az
 
 ## Quick start
 
+* Deploy base infrastructure using CLI:
 ```bash
 # Select subscription
 az account set -s "....."
 # Deploy infrastructure
 az deployment sub create --template-file main.bicep --location centralindia
-
 ``` 
 
-Enjoy & feel free to ping me & provide me feedbacks! 
+* Azure Portal - Navigate to Network Watcher => Connection Monitor:
+
+![Connection Monitor](docs/connectionmonitor.png)
+
+* Azure Portal - Create a custom dashboard and pin tests groups metrics charts to this custom dahsboard.
+
+![Dashboard](docs/dashboard.png)
+
+* Enjoy!
+
