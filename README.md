@@ -1,7 +1,8 @@
 # Lab - Connection Monitor with Bicep
 
-This repo is a lab to play with Connection Monitor.
-It contains basically Azure Bicep code to provision bellow infrastructure:
+This repo is a lab to **play with Connection Monitor**, part of Network Watcher.
+
+It contains basically Azure Bicep code to provision following infrastructure:
 
 ![Big Picture](docs/architecture.png)
 
